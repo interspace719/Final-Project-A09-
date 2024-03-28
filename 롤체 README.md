@@ -43,10 +43,6 @@ A09 최종 프로젝트 : 게임 데이터 분석
           구성 챔피언 이름, 챔피언 코스트, 챔피언 몇 성, 장착된 아이템(아이템 1,2,3), 고른 증강체(증강체1,2,3), 종료 시 레벨
 
 
-
-
-
-
 ## 라이엇 API 꺼내오는 방법 순서
 
 1. 라이엇 데이터의 경우 3가지 순서를 거쳐야 함
@@ -78,11 +74,22 @@ A09 최종 프로젝트 : 게임 데이터 분석
 
 ## 프로젝트 진행 상황 정리
 
-1. [text](<1. make TFT ranker puuid table.ipynb>) 파일을 이용하면 모든 랭커 구간의 유저 정보, 및 puuid 를 조회하여 
+1. (<1. make TFT ranker puuid table.ipynb>) 파일을 이용하면 모든 랭커 구간의 유저 정보, 및 puuid 를 조회하여 
    csv 파일로 만들수 있도록 쿼리 작성 완료
 
-2. [text](<2. make tier_gameId table.ipynb>) 파일을 이용하면 앞서서 만든 csv 파일을 이용하여 모든 랭커 구간의
+   # 과정 1의 최종 결과물 : (ranker_name_puuid.csv)
+
+2. (<2. make tier_gameId table.ipynb>) 파일을 이용하면 앞서서 만든 csv 파일을 이용하여 모든 랭커 구간의
    gameId 와 해당 게임의 티어까지 조회하여 csv 파일로 만들 수 있도록 쿼리 작성 완료
+
+   # 과정 2의 최종 결과물 : (tier_and_gameId.csv)
+
+3. (<3. make match info table.ipynb>) 파일을 이용하면 앞서서 만든 (tier_and_gameId.csv) 테이블에 존재하는 모든 gameId 에
+   대한 game results data 를 조회하고, 
+
+   각 participants 의 최종 게임 결과를 각각의 행으로 분리하여 csv 로 저장할수 있도록 쿼리 작성했음
+
+   # 과정 3의 최종 결과물 : (game_results_of_each_participants.csv)
 
    
 
