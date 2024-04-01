@@ -91,5 +91,16 @@ A09 최종 프로젝트 : 게임 데이터 분석
 
    # 과정 3의 최종 결과물 : (game_results_of_each_participants.csv)
 
+4. (<4. make units combination table.ipynb>) 을 이용하면 각각의 참가자가 게임 종료 시점에 들고있었던 기물의 종류와 각 기물들이
+   몇성이 찍혀있는지 확인할 수 있는 테이블이 만들수 있도록 쿼리를 작성하였다
+
+   # 과정 4의 결과물 : (units_tiers_and_combination.csv)
+
+
+5. (<5. make units item table.ipynb>) 를 이용하면, 각각의 유닛이 게임 종료시에 가지고있던 아이템의 정보가 리스트 형태로
+   저장되어있는 테이블을 만들수 있도록 쿼리를 작성하였다
+
+   # 과정 5의 결과물 : 
+
    
 
